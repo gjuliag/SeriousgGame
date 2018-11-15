@@ -15,6 +15,10 @@ public class Parametry {
     public static String[][] los1;//slowa w poziomie w wylosowanej kolejnosci
     public static String[][] los2;//slowa w poziomie w wylosowanej kolejnosci
     public static String[][] los3;//slowa w poziomie w wylosowanej kolejnosci
+    public static int[] spr1;//tablica do sprawdzania, czy zostala wylosowana juz dana litera (poziom1)
+    public static int[] spr2;//tablica do sprawdzania, czy zostala wylosowana juz dana litera (poziom2)
+    public static int[] spr3;//tablica do sprawdzania, czy zostala wylosowana juz dana litera (poziom3)
+    public static int[] kolejnosc;
     public static String[] alfabet;//tablica z literami
     public static Image[] krople;//tablica przyciskow z literami
     public static Image tlo;//obraz na tlo

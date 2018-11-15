@@ -9,7 +9,7 @@ import static seriousgame.Losowanie.losujSlowa;
 
 
 public class Glowna {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException, InterruptedException {
         
         //pole graficzne gry
         int szerokoscGry=1024;
@@ -24,7 +24,7 @@ public class Glowna {
         //JPanel mypanel=new RysowaniePanelu(wysokoscOkna, szerokoscOkna);
         
         
-        losujSlowa(2);
+        //losujSlowa(1);
     
     }//main
     
