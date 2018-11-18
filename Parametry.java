@@ -7,8 +7,6 @@ import javax.swing.ImageIcon;
 
 public class Parametry {
     
-    public static long maxCzasGry=Long.MAX_VALUE;
-    public final int liczbaPoziomow=3;
     public static String[][] poziom1;//slowa na poziomie 1(kazda lieteraw oddzielnej komorce)
     public static String[][] poziom2;//slowa na poziomie 2
     public static String[][] poziom3;//slowa na poziomie 3
@@ -25,6 +23,7 @@ public class Parametry {
     public static long startGry;//poczatek gry
     public static double czasPoziomu;//czas poziomu
     public static int terazPoziom;//aktualny poziom
+    public static int ktoreSlowo;//aktualnie wyswtetlane slowo
     public static boolean czyKoniec=false;//koniec gry
     public static int szerGry=1024;
     public static int wysGry=768;

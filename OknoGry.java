@@ -1,18 +1,13 @@
 
 package seriousgame;
 
-
-import java.awt.BorderLayout;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
+import java.awt.Cursor;
 import java.awt.GridLayout;
+import java.awt.Point;
+import java.awt.Toolkit;
 import static java.lang.Thread.sleep;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import static seriousgame.Parametry.*;
-import static seriousgame.Przycisk.*;
 
 
 
@@ -26,12 +21,11 @@ public class OknoGry extends JFrame {
         setLocation(pozycjaX,pozycjaY); //ustaw pozycję okna
         setResizable(false); //zablokuj możliwość zmian rozmiaru okna
         setUndecorated(true); //ukryj ramkę okna i przyciski kontrolne
-        //GUI(szerokosc,wysokosc); //wywołaj metodę budowy interfejsu
         GUI();
      
         
         setVisible(true);
-           petla();
+        petla();
          
 }//konstruktor OknoGry
     
@@ -39,16 +33,15 @@ public class OknoGry extends JFrame {
         setLayout(new GridLayout(1,1));
         Parametry.ladujGrafike();
         add(new RysowaniePanelu());
-        
-        
+           
     }
     
     public void petla() throws InterruptedException{
     while(true){
-        sleep(4000);
+        sleep(3000);
         repaint();
         
     }
-}
+}//petla
 
 }//class OknoGry
