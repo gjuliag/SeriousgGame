@@ -3,9 +3,6 @@ package seriousgame;
 
 import java.awt.Toolkit;
 import java.io.FileNotFoundException;
-import javax.swing.JPanel;
-import static seriousgame.Losowanie.losujSlowa;
-
 
 
 public class Glowna {
@@ -21,7 +18,6 @@ public class Glowna {
         int x=(szerokoscOkna-szerokoscGry)/2;
         int y=(wysokoscOkna-wysokoscGry)/2;
         OknoGry og= new OknoGry(szerokoscGry, wysokoscGry, x , y);
-        //JPanel mypanel=new RysowaniePanelu(wysokoscOkna, szerokoscOkna);
         
         
         //losujSlowa(1);

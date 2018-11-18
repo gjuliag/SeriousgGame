@@ -11,9 +11,7 @@ public class Losowanie {
         
         ladujSlowa();
         Random r= new Random();
-        
         int d;//zmienna z przypisana wylosowana liczba
-        
         
         for(int terazPoziom=1; terazPoziom<4; terazPoziom++){
         switch (terazPoziom) {
@@ -41,10 +39,7 @@ public class Losowanie {
                                 }//while          
                         }//for
                     }//for
-                        System.out.println("slowo "+los1[0][0]+los1[0][1]+los1[0][2]);
-                        System.out.println("slowo "+los1[1][0]+los1[1][1]+los1[1][2]);
-                        System.out.println("slowo "+los1[2][0]+los1[2][1]+los1[2][2]);
-                    }//case;
+                    }//case1;
                     break;
                 
                 case 2:
@@ -72,9 +67,6 @@ public class Losowanie {
                                 }//while          
                         }//for
                     }//for
-                                System.out.println(los2[0][0]+los2[0][1]+los2[0][2]+los2[0][3]);
-                                System.out.println(los2[1][0]+los2[1][1]+los2[1][2]+los2[1][3]);
-                                System.out.println(los2[2][0]+los2[2][1]+los2[2][2]+los2[2][3]);
                 }//case2
                 break;
             case 3:
@@ -103,9 +95,6 @@ public class Losowanie {
                                 }//while          
                         }//for
                     }//for
-                                System.out.println(los3[0][0]+los3[0][1]+los3[0][2]+los3[0][3]+los3[0][4]);
-                                System.out.println(los3[1][0]+los3[1][1]+los3[1][2]+los3[1][3]+los3[1][4]);
-                                System.out.println(los3[2][0]+los3[2][1]+los3[2][2]+los3[2][3]+los3[2][4]);
                 }//case3
                 break; 
             default:
