@@ -16,6 +16,7 @@ public class StanGry {
     public static void kolejnyPoziom(){
     terazPoziom++;
     ktoreSlowo=0;
+    
     }//kolejnyPoziom
     
     public static void kolejneSlowo(){

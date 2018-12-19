@@ -18,9 +18,6 @@ public class Glowna {
         int x=(szerokoscOkna-szerokoscGry)/2;
         int y=(wysokoscOkna-wysokoscGry)/2;
         OknoGry og= new OknoGry(szerokoscGry, wysokoscGry, x , y);
-        
-        
-        //losujSlowa(1);
     
     }//main
     

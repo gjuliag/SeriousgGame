@@ -10,21 +10,22 @@ public class Parametry {
     public static String[][] poziom1;//slowa na poziomie 1(kazda lieteraw oddzielnej komorce)
     public static String[][] poziom2;//slowa na poziomie 2
     public static String[][] poziom3;//slowa na poziomie 3
-    public static String[][] los1;//slowa w poziomie w wylosowanej kolejnosci
-    public static String[][] los2;//slowa w poziomie w wylosowanej kolejnosci
-    public static String[][] los3;//slowa w poziomie w wylosowanej kolejnosci
+    public static String[][] los1;//slowa w poziomie 1 w wylosowanej kolejnosci
+    public static String[][] los2;//slowa w poziomie 2 w wylosowanej kolejnosci
+    public static String[][] los3;//slowa w poziomie 3 w wylosowanej kolejnosci
     public static int[] spr1;//tablica do sprawdzania, czy zostala wylosowana juz dana litera (poziom1)
     public static int[] spr2;//tablica do sprawdzania, czy zostala wylosowana juz dana litera (poziom2)
     public static int[] spr3;//tablica do sprawdzania, czy zostala wylosowana juz dana litera (poziom3)
+    public static int[][] jak1;//kolejnosc liter slow w poziomie 1
+    public static int[][] jak2;//kolejnosc liter slow w poziomie 2
+    public static int[][] jak3;//kolejnosc liter slow w poziomie 3
     public static int[] kolejnosc;
     public static String[] alfabet;//tablica z literami
     public static Image[] krople;//tablica przyciskow z literami
     public static Image tlo;//obraz na tlo
-    public static long startGry;//poczatek gry
     public static double czasPoziomu;//czas poziomu
     public static int terazPoziom;//aktualny poziom
     public static int ktoreSlowo;//aktualnie wyswtetlane slowo
-    public static boolean czyKoniec=false;//koniec gry
     public static int szerGry=1024;
     public static int wysGry=768;
     
@@ -116,7 +117,7 @@ public class Parametry {
             krople[16]=ladujZdj("alfabet/W.png");
             
             
-            tlo=ladujZdj("alfabet/tlo.jpg");
+            tlo=ladujZdj("alfabet/tlo.png");
         }//ladujKrople
         
         public static Image ladujZdj(String nazwaPliku) {
