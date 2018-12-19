@@ -1,14 +1,9 @@
 
 package seriousgame;
 
-import java.awt.Cursor;
 import java.awt.GridLayout;
-import java.awt.Point;
-import java.awt.Toolkit;
 import static java.lang.Thread.sleep;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-
 
 
 public class OknoGry extends JFrame {
@@ -25,18 +20,18 @@ public class OknoGry extends JFrame {
      
         
         setVisible(true);
-        petla();
+        //petla();
          
 }//konstruktor OknoGry
     
-    public void GUI(){
+    private void GUI(){
         setLayout(new GridLayout(1,1));
         Parametry.ladujGrafike();
         add(new RysowaniePanelu());
            
     }
     
-    public void petla() throws InterruptedException{
+    private void petla() throws InterruptedException{
     while(true){
         sleep(3000);
         repaint();
