@@ -5,22 +5,31 @@ import static seriousgame.Parametry.*;
 
 public class StanGry {
     
-    //public int punkty;//liczba punktow
-    
+    //Zarządzanie stanem gry- rozpoczęcie nowej gry, zwiększenie poziomu, kolejne słowo.
     public static void odNowa(){
-        //punkty=0;
+        
         terazPoziom=1;
         ktoreSlowo=0;
+        RysowaniePanelu.punkty=0;
+        RysowaniePanelu.k=0;
+        RysowaniePanelu.klik=0;
+        RysowaniePanelu.ktore=0;
+        RysowaniePanelu.ok=0;
+        RysowaniePanelu.zle=0;
+        
     }//odNowa
     
     public static void kolejnyPoziom(){
-    terazPoziom++;
-    ktoreSlowo=0;
+        
+        terazPoziom++;
+        ktoreSlowo=0;
     
     }//kolejnyPoziom
     
     public static void kolejneSlowo(){
-    ktoreSlowo++;
+        
+        ktoreSlowo++;
+        
     }//kolejneSlowo
     
 }//class StanGry

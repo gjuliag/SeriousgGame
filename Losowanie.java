@@ -7,12 +7,16 @@ import static seriousgame.Parametry.*;
 
 public class Losowanie {
     
+    /* Losowanie miejsca, na którym ma się znaleźć każda kolejna literka z każdego słowa- kolejno dla
+    każdego poziomu. W momencie, gdy dane miejsce zostało już wylosowane, zostaje wylosowane kolejny 
+    raz.
+    */
+    
     public static void losujSlowa(){
         
         ladujSlowa();
         Random r= new Random();
         int d;//zmienna z przypisana wylosowana liczba
-        //int jak1[]= new int[3];
         
         for(int terazPoziom=1; terazPoziom<4; terazPoziom++){
         switch (terazPoziom) {
@@ -41,15 +45,7 @@ public class Losowanie {
                                 }//while          
                         }//for
                     }//for
-                        /*
-                        System.out.println(los1[0][0]+" "+los1[0][1]+" "+los1[0][2]);
-                        System.out.println(jak1[0][0]+" "+jak1[0][1]+" "+jak1[0][2]);
-                        System.out.println(los1[1][0]+" "+los1[1][1]+" "+los1[1][2]);
-                        System.out.println(jak1[1][0]+" "+jak1[1][1]+" "+jak1[1][2]);
-                        System.out.println(los1[2][0]+" "+los1[2][1]+" "+los1[2][2]);
-                        System.out.println(jak1[2][0]+" "+jak1[2][1]+" "+jak1[2][2]);
-                        */
-                    }//case1;
+                }//case1;
                     break;
                 
                 case 2:
@@ -78,14 +74,6 @@ public class Losowanie {
                                 }//while          
                         }//for
                     }//for
-                    /*
-                        System.out.println(los2[0][0]+" "+los2[0][1]+" "+los2[0][2]+" "+los2[0][3]);
-                        System.out.println(jak2[0][0]+" "+jak2[0][1]+" "+jak2[0][2]+" "+jak2[0][3]);
-                        System.out.println(los2[1][0]+" "+los2[1][1]+" "+los2[1][2]+" "+los2[1][3]);
-                        System.out.println(jak2[1][0]+" "+jak2[1][1]+" "+jak2[1][2]+" "+jak2[1][3]);
-                        System.out.println(los2[2][0]+" "+los2[2][1]+" "+los2[2][2]+" "+los2[2][3]);
-                        System.out.println(jak2[2][0]+" "+jak2[2][1]+" "+jak2[2][2]+" "+jak2[2][3]);
-                    */
                 }//case2
                 break;
             case 3:
@@ -114,15 +102,7 @@ public class Losowanie {
                                     else d=r.nextInt(los3[i].length);   
                                 }//while          
                         }//for
-                    }//for
-                        
-                        System.out.println(los3[0][0]+" "+los3[0][1]+" "+los3[0][2]+" "+los3[0][3]+" "+los3[0][4]);
-                        System.out.println(jak3[0][0]+" "+jak3[0][1]+" "+jak3[0][2]+" "+jak3[0][3]+" "+jak3[0][4]);
-                        System.out.println(los3[1][0]+" "+los3[1][1]+" "+los3[1][2]+" "+los3[1][3]+" "+los3[1][4]);
-                        System.out.println(jak3[1][0]+" "+jak3[1][1]+" "+jak3[1][2]+" "+jak3[1][3]+" "+jak3[1][4]);
-                        System.out.println(los3[2][0]+" "+los3[2][1]+" "+los3[2][2]+" "+los3[2][3]+" "+los3[2][4]);
-                        System.out.println(jak3[2][0]+" "+jak3[2][1]+" "+jak3[2][2]+" "+jak3[2][3]+" "+jak3[2][4]);
-                        
+                    }//for            
             }//case3
                 break; 
             default:

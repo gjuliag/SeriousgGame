@@ -2,9 +2,12 @@
 package seriousgame;
 
 import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.ImageIcon;
 
-
+/*Klasa przechowująca ważniejsze parametry gry tj. słowa dla danych poziomów, obrazki kropli
+informacje odnośnie aktualnego poziomu oraz słowa, kolejność wyslosowanych liter dla słów 
+w poziomach, wymiary okna.*/
 public class Parametry {
     
     public static String[][] poziom1;//slowa na poziomie 1(kazda lieteraw oddzielnej komorce)
@@ -23,13 +26,15 @@ public class Parametry {
     public static String[] alfabet;//tablica z literami
     public static Image[] krople;//tablica przyciskow z literami
     public static Image tlo;//obraz na tlo
-    public static double czasPoziomu;//czas poziomu
     public static int terazPoziom;//aktualny poziom
     public static int ktoreSlowo;//aktualnie wyswtetlane slowo
     public static int szerGry=1024;
     public static int wysGry=768;
+    public static int szerokoscOkna=Toolkit.getDefaultToolkit().getScreenSize().width;
+    public static int wysokoscOkna=Toolkit.getDefaultToolkit().getScreenSize().height; 
     
-    //wczytywanie slow z pliku
+    //Wczytywanie slow oraz liter alfabetu.
+    
     public static void ladujSlowa(){
       
         poziom1 = new String[3][3];
@@ -95,6 +100,8 @@ public class Parametry {
 
     }//ladujSlowa
     
+    //Wczytywanie grafiki- obrazkow kropel z literkami oraz obrazu tła. 
+    
         public static void ladujGrafike(){
         
             krople= new Image[17];
@@ -120,8 +127,11 @@ public class Parametry {
             tlo=ladujZdj("alfabet/tlo.png");
         }//ladujKrople
         
+        //Zaladowanie obrazkow do gry
         public static Image ladujZdj(String nazwaPliku) {
+            
         return new ImageIcon(nazwaPliku).getImage();
+        
     }//ladujZdj 
 }//class Parametry
         
