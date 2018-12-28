@@ -1,23 +1,19 @@
 
 package seriousgame;
 
-import java.awt.Toolkit;
 import java.io.FileNotFoundException;
 
 
 public class Glowna {
+    
+    //Metoda uruchamia grę- tworzy okno gry o podanych wymiarach na środku ekranu. 
+    
     public static void main(String[] args) throws FileNotFoundException, InterruptedException {
         
-        //pole graficzne gry
-        int szerokoscGry=1024;
-        int wysokoscGry=768;
+        int x=(Parametry.szerokoscOkna-Parametry.szerGry)/2;
+        int y=(Parametry.wysokoscOkna-Parametry.wysGry)/2;
         
-        int szerokoscOkna=Toolkit.getDefaultToolkit().getScreenSize().width;
-        int wysokoscOkna=Toolkit.getDefaultToolkit().getScreenSize().height;
-        
-        int x=(szerokoscOkna-szerokoscGry)/2;
-        int y=(wysokoscOkna-wysokoscGry)/2;
-        OknoGry og= new OknoGry(szerokoscGry, wysokoscGry, x , y);
+        OknoGry og= new OknoGry(Parametry.szerGry, Parametry.wysGry, x , y);
     
     }//main
     
